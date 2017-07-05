@@ -25,7 +25,7 @@
         </md-button>
 
         </md-card-content>
-        <md-table>
+        <md-table class ="customTable">
         <md-table-header>
 
         	<md-table-row>
@@ -39,6 +39,11 @@
         </md-table-header>
         <md-table-body>
         <md-table-row v-for="contact in contacts">
+        <md-table-cell>
+      <md-avatar class="md-avatar-icon">
+  <md-icon>home</md-icon>
+</md-avatar>
+		</md-table-cell>
         
 
         <md-table-cell>{{contact.firstname}}</md-table-cell>
@@ -85,5 +90,8 @@
   margin-left: 30px;
   margin-right: 30px;
 
+  }
+  .customTable{
+  	background-color:gray;
   }
 </style>
